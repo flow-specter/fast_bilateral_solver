@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E14A8025-545A-4F8F-9EBD-FCDF22E5726C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>fbs</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include;D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include\opencv;D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include\opencv2;D:\bilateral-solver\3rdParty\eigen341;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\x86\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include;D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include\opencv;D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\include\opencv2;D:\bilateral-solver\3rdParty\eigen341;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\bilateral-solver\3rdParty\myOpencv-3410\opencv3410-build\install\x86\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_aruco3410.lib;opencv_aruco3410d.lib;opencv_bgsegm3410.lib;opencv_bgsegm3410d.lib;opencv_bioinspired3410.lib;opencv_bioinspired3410d.lib;opencv_calib3d3410.lib;opencv_calib3d3410d.lib;opencv_ccalib3410.lib;opencv_ccalib3410d.lib;opencv_core3410.lib;opencv_core3410d.lib;opencv_datasets3410.lib;opencv_datasets3410d.lib;opencv_dnn3410.lib;opencv_dnn3410d.lib;opencv_dnn_objdetect3410.lib;opencv_dnn_objdetect3410d.lib;opencv_dpm3410.lib;opencv_dpm3410d.lib;opencv_face3410.lib;opencv_face3410d.lib;opencv_features2d3410.lib;opencv_features2d3410d.lib;opencv_flann3410.lib;opencv_flann3410d.lib;opencv_fuzzy3410.lib;opencv_fuzzy3410d.lib;opencv_hdf3410.lib;opencv_hdf3410d.lib;opencv_hfs3410.lib;opencv_hfs3410d.lib;opencv_highgui3410.lib;opencv_highgui3410d.lib;opencv_imgcodecs3410.lib;opencv_imgcodecs3410d.lib;opencv_imgproc3410.lib;opencv_imgproc3410d.lib;opencv_img_hash3410.lib;opencv_img_hash3410d.lib;opencv_line_descriptor3410.lib;opencv_line_descriptor3410d.lib;opencv_ml3410.lib;opencv_ml3410d.lib;opencv_objdetect3410.lib;opencv_objdetect3410d.lib;opencv_optflow3410.lib;opencv_optflow3410d.lib;opencv_phase_unwrapping3410.lib;opencv_phase_unwrapping3410d.lib;opencv_photo3410.lib;opencv_photo3410d.lib;opencv_plot3410.lib;opencv_plot3410d.lib;opencv_reg3410.lib;opencv_reg3410d.lib;opencv_rgbd3410.lib;opencv_rgbd3410d.lib;opencv_saliency3410.lib;opencv_saliency3410d.lib;opencv_shape3410.lib;opencv_shape3410d.lib;opencv_stereo3410.lib;opencv_stereo3410d.lib;opencv_structured_light3410.lib;opencv_structured_light3410d.lib;opencv_superres3410.lib;opencv_superres3410d.lib;opencv_surface_matching3410.lib;opencv_surface_matching3410d.lib;opencv_text3410.lib;opencv_text3410d.lib;opencv_tracking3410.lib;opencv_tracking3410d.lib;opencv_video3410.lib;opencv_video3410d.lib;opencv_videoio3410.lib;opencv_videoio3410d.lib;opencv_videostab3410.lib;opencv_videostab3410d.lib;opencv_ximgproc3410.lib;opencv_ximgproc3410d.lib;opencv_xobjdetect3410.lib;opencv_xobjdetect3410d.lib;opencv_xphoto3410.lib;opencv_xphoto3410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>false</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_aruco3410.lib;opencv_aruco3410d.lib;opencv_bgsegm3410.lib;opencv_bgsegm3410d.lib;opencv_bioinspired3410.lib;opencv_bioinspired3410d.lib;opencv_calib3d3410.lib;opencv_calib3d3410d.lib;opencv_ccalib3410.lib;opencv_ccalib3410d.lib;opencv_core3410.lib;opencv_core3410d.lib;opencv_datasets3410.lib;opencv_datasets3410d.lib;opencv_dnn3410.lib;opencv_dnn3410d.lib;opencv_dnn_objdetect3410.lib;opencv_dnn_objdetect3410d.lib;opencv_dpm3410.lib;opencv_dpm3410d.lib;opencv_face3410.lib;opencv_face3410d.lib;opencv_features2d3410.lib;opencv_features2d3410d.lib;opencv_flann3410.lib;opencv_flann3410d.lib;opencv_fuzzy3410.lib;opencv_fuzzy3410d.lib;opencv_hdf3410.lib;opencv_hdf3410d.lib;opencv_hfs3410.lib;opencv_hfs3410d.lib;opencv_highgui3410.lib;opencv_highgui3410d.lib;opencv_imgcodecs3410.lib;opencv_imgcodecs3410d.lib;opencv_imgproc3410.lib;opencv_imgproc3410d.lib;opencv_img_hash3410.lib;opencv_img_hash3410d.lib;opencv_line_descriptor3410.lib;opencv_line_descriptor3410d.lib;opencv_ml3410.lib;opencv_ml3410d.lib;opencv_objdetect3410.lib;opencv_objdetect3410d.lib;opencv_optflow3410.lib;opencv_optflow3410d.lib;opencv_phase_unwrapping3410.lib;opencv_phase_unwrapping3410d.lib;opencv_photo3410.lib;opencv_photo3410d.lib;opencv_plot3410.lib;opencv_plot3410d.lib;opencv_reg3410.lib;opencv_reg3410d.lib;opencv_rgbd3410.lib;opencv_rgbd3410d.lib;opencv_saliency3410.lib;opencv_saliency3410d.lib;opencv_shape3410.lib;opencv_shape3410d.lib;opencv_stereo3410.lib;opencv_stereo3410d.lib;opencv_structured_light3410.lib;opencv_structured_light3410d.lib;opencv_superres3410.lib;opencv_superres3410d.lib;opencv_surface_matching3410.lib;opencv_surface_matching3410d.lib;opencv_text3410.lib;opencv_text3410d.lib;opencv_tracking3410.lib;opencv_tracking3410d.lib;opencv_video3410.lib;opencv_video3410d.lib;opencv_videoio3410.lib;opencv_videoio3410d.lib;opencv_videostab3410.lib;opencv_videostab3410d.lib;opencv_ximgproc3410.lib;opencv_ximgproc3410d.lib;opencv_xobjdetect3410.lib;opencv_xobjdetect3410d.lib;opencv_xphoto3410.lib;opencv_xphoto3410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FBS.cpp" />
+    <ClCompile Include="PreProcessing.cpp" />
+    <ClCompile Include="源.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Evaluate.h" />
+    <ClInclude Include="FBS.h" />
+    <ClInclude Include="PreProcessing.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
